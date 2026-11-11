@@ -76,7 +76,7 @@
         <mxCell id="end-met-4" value="+ get numero(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
           <mxGeometry y="180" width="500" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="end-met-5" value="+ set numero(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+        <mxCell id="end-met-5" value="+ set numero(valor: string | number): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
           <mxGeometry y="200" width="500" height="20" as="geometry" />
         </mxCell>
         <mxCell id="end-met-6" value="+ get cidade(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
@@ -169,14 +169,11 @@
         </mxCell>
 
         <!-- Relacao de heranca e composicao -->
-        <mxCell id="rel-comp" value="possui" style="endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;startSize=14;endSize=10;html=1;strokeWidth=1.5;strokeColor=#334155;fontFamily=Helvetica;fontSize=11;fontColor=#334155;" edge="1" parent="1" source="pessoa" target="endereco">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="rel-comp" value="possui" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3875;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;startSize=14;endSize=10;html=1;strokeWidth=1.5;strokeColor=#334155;fontFamily=Helvetica;fontSize=11;fontColor=#334155;labelBackgroundColor=none;" edge="1" parent="1" source="pessoa" target="endereco">
+          <mxGeometry y="14" relative="1" as="geometry">
             <mxPoint x="540" y="172" as="sourcePoint" />
             <mxPoint x="700" y="172" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="540" y="172" />
-              <mxPoint x="700" y="172" />
-            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mult-pessoa" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#334155;fontFamily=Helvetica;" vertex="1" parent="1">
