@@ -1,4 +1,4 @@
-﻿# e-big — Cadastro de Clientes (Electronic / Appfull)
+﻿# Electronic - Cadastro de Clientes 
 
 Módulo de cadastro de clientes (pessoas físicas e jurídicas) de um e-commerce de eletrônicos, em **JavaScript orientado a objetos**.
 
@@ -7,7 +7,7 @@ Módulo de cadastro de clientes (pessoas físicas e jurídicas) de um e-commerce
 - **Estudante:** Mateus Gomes Neri
 - **GitHub:** [mateusnriy](https://github.com/mateusnriy)
 - **Unidade Curricular:** Programação Orientada a Objetos
-- **Atividade:** Avaliação 01 — Cadastro de Clientes (Electronic / Appfull)
+- **Atividade:** Avaliação 01 - Cadastro de Clientes (Electronic / Appfull)
 
 ## Como executar
 
@@ -114,6 +114,3 @@ Saída de `node --test`:
 ℹ fail 0
 ```
 
-## Histórico
-
-Veja `git log --oneline` para a evolução: configuração → diagrama → utilitários → classes → fluxo principal → testes → README.

@@ -6,7 +6,7 @@
         <mxCell id="1" parent="0" />
 
         <!-- Título -->
-        <mxCell id="title" value="Electronic (Appfull) — Diagrama de Classes UML: Cadastro de Clientes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#0f172a;fontFamily=Helvetica;" vertex="1" parent="1">
+        <mxCell id="title" value="Electronic (Appfull) - Diagrama de Classes UML: Cadastro de Clientes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#0f172a;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="40" y="10" width="760" height="28" as="geometry" />
         </mxCell>
 
