@@ -1,0 +1,13 @@
+{
+  "name": "electronic-cadastro-clientes",
+  "version": "1.0.0",
+  "description": "Módulo de cadastro de clientes (Pessoa Física e Pessoa Jurídica) em JavaScript Orientado a Objetos para a loja Electronic (Appfull).",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "author": "mateusnriy <mateusgomesneri@gmail.com>",
+  "license": "MIT"
+}
