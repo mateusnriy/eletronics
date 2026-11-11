@@ -1,7 +1,7 @@
 ﻿{
   "name": "e-big",
   "version": "1.0.0",
-  "description": "MÃ³dulo de cadastro de clientes (Pessoa FÃ­sica e Pessoa JurÃ­dica) em JavaScript Orientado a Objetos para a loja Electronic (Appfull).",
+  "description": "Módulo de cadastro de clientes (Pessoa Física e Pessoa Jurídica) em JavaScript Orientado a Objetos para a loja Electronic (Appfull).",
   "main": "index.js",
   "type": "module",
   "scripts": {
