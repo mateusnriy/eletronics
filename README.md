@@ -4,10 +4,10 @@ Módulo de cadastro de clientes (pessoas físicas e jurídicas) de um e-commerce
 
 ## Identificação do estudante
 
-- **Nome:** <PREENCHER NOME COMPLETO>
-- **GitHub:** mateusnriy
-- **Curso/Turma:** <PREENCHER>
-- **Atividade:** Avaliação 01 — Programação Orientada a Objetos
+- **Estudante:** Mateus Gomes Neri
+- **GitHub:** [mateusnriy](https://github.com/mateusnriy)
+- **Unidade Curricular:** Programação Orientada a Objetos
+- **Atividade:** Avaliação 01 — Cadastro de Clientes (Electronic / Appfull)
 
 ## Como executar
 
