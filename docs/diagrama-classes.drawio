@@ -1,0 +1,220 @@
+﻿<mxfile host="app.diagrams.net" modified="2026-11-10T22:45:00.000Z" agent="Antigravity" version="24.7.17" type="device">
+  <diagram id="uml-cadastro-clientes" name="Diagrama de Classes UML">
+    <mxGraphModel dx="1320" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1260" pageHeight="860" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Título -->
+        <mxCell id="title" value="Electronic (Appfull) — Diagrama de Classes UML: Cadastro de Clientes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#0f172a;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="760" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- Classe Pessoa (Abstrata) -->
+        <mxCell id="pessoa" value="&lt;&lt;abstract&gt;&gt;&#xa;Pessoa" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#334155;fontColor=#0f172a;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="120" y="48" width="420" height="248" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-attr-1" value="- nome: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="42" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-attr-2" value="- endereco: Endereco" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="64" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#334155;" vertex="1" parent="pessoa">
+          <mxGeometry y="86" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-1" value="+ Pessoa(nome, endereco)" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="94" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-2" value="+ get nome(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="116" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-3" value="+ set nome(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="138" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-4" value="+ get endereco(): Endereco" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="160" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-5" value="+ set endereco(valor: Endereco): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="182" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-6" value="# _formatarDadosBase(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="204" width="420" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pessoa-met-7" value="+ exibirDados(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontStyle=2;fontColor=#1e293b;" vertex="1" parent="pessoa">
+          <mxGeometry y="226" width="420" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Classe Endereco -->
+        <mxCell id="endereco" value="Endereco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#1d4ed8;fontColor=#1e3a8a;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="700" y="48" width="500" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="end-attr-1" value="- logradouro: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="32" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-attr-2" value="- numero: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="52" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-attr-3" value="- cidade: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="72" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-attr-4" value="- uf: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="92" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#1d4ed8;" vertex="1" parent="endereco">
+          <mxGeometry y="112" width="500" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-1" value="+ Endereco(logradouro, numero, cidade, uf)" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="120" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-2" value="+ get logradouro(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="140" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-3" value="+ set logradouro(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="160" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-4" value="+ get numero(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="180" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-5" value="+ set numero(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="200" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-6" value="+ get cidade(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="220" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-7" value="+ set cidade(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="240" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-8" value="+ get uf(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="260" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-9" value="+ set uf(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="280" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end-met-10" value="+ formatar(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="endereco">
+          <mxGeometry y="300" width="500" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Classe PessoaFisica -->
+        <mxCell id="pf" value="PessoaFisica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#15803d;fontColor=#14532d;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="560" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-attr-1" value="- cpf: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="32" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-attr-2" value="- dataNascimento: Date" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="56" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#15803d;" vertex="1" parent="pf">
+          <mxGeometry y="80" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-1" value="+ PessoaFisica(nome, cpf, dataNascimento, endereco)" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="88" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-2" value="+ get cpf(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="112" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-3" value="+ set cpf(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="136" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-4" value="+ get dataNascimento(): Date" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="160" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-5" value="+ set dataNascimento(valor: string | Date): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="184" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-6" value="+ formatarCpf(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="208" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-7" value="+ formatarDataNascimento(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="232" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pf-met-8" value="+ exibirDados(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pf">
+          <mxGeometry y="256" width="560" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Classe PessoaJuridica -->
+        <mxCell id="pj" value="PessoaJuridica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#b45309;fontColor=#78350f;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="640" y="440" width="560" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-attr-1" value="- cnpj: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="32" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-attr-2" value="- razaoSocial: string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="56" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b45309;" vertex="1" parent="pj">
+          <mxGeometry y="80" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-1" value="+ PessoaJuridica(nome, cnpj, razaoSocial, endereco)" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="88" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-2" value="+ get cnpj(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="112" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-3" value="+ set cnpj(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="136" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-4" value="+ get razaoSocial(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="160" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-5" value="+ set razaoSocial(valor: string): void" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="184" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-6" value="+ formatarCnpj(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="208" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pj-met-7" value="+ exibirDados(): string" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#1e293b;" vertex="1" parent="pj">
+          <mxGeometry y="232" width="560" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Relacao de heranca e composicao -->
+        <mxCell id="rel-comp" value="possui" style="endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;startSize=14;endSize=10;html=1;strokeWidth=1.5;strokeColor=#334155;fontFamily=Helvetica;fontSize=11;fontColor=#334155;" edge="1" parent="1" source="pessoa" target="endereco">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="172" as="sourcePoint" />
+            <mxPoint x="700" y="172" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="172" />
+              <mxPoint x="700" y="172" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mult-pessoa" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#334155;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="550" y="148" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mult-endereco" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#334155;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="670" y="148" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Relacao de heranca e composicao -->
+        <mxCell id="rel-heranca-pf" value="extends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#15803d;fontFamily=Helvetica;fontSize=11;fontColor=#15803d;" edge="1" parent="1" source="pf" target="pessoa">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="440" as="sourcePoint" />
+            <mxPoint x="330" y="296" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="404" />
+              <mxPoint x="330" y="404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-heranca-pj" value="extends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#b45309;fontFamily=Helvetica;fontSize=11;fontColor=#b45309;" edge="1" parent="1" source="pj" target="pessoa">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="440" as="sourcePoint" />
+            <mxPoint x="330" y="296" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="404" />
+              <mxPoint x="330" y="404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Legenda UML -->
+        <mxCell id="legenda" value="Legenda de Visibilidade e Relacionamentos UML:    + Público (public)    |    - Privado (campos # privados em JS)    |    # Protegido (@protected para subclasses)    |    ▷ Herança (extends / super)    |    ◆ Composição" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#334155;fontFamily=Helvetica;fontSize=12;align=center;verticalAlign=middle;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="756" width="1160" height="56" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
